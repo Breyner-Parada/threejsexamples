@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, HashRouter  } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { WormHoleCanvas } from "./components/WormholeEffect";
@@ -7,7 +7,7 @@ import { PortalScene } from "./components/PortalScene";
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,7 +29,7 @@ function App() {
         />
         <Route path="/portals" element={<PortalScene />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
