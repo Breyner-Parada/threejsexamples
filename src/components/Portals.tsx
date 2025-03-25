@@ -10,7 +10,6 @@ import {
 } from "@react-three/drei";
 import * as THREE from "three";
 import { WomanOffice } from "./Models/Indian_office_woman";
-import { Fountain } from "./Models/Fountain_water_simulation";
 import { Phoenix } from "./Models/Phoenix_bird";
 import { useFrame, useThree } from "@react-three/fiber";
 import { easing } from "maath";
@@ -86,8 +85,8 @@ export const Portals = () => {
         setActiveScene={setActiveScene}
         setIsHovered={setIsHovered}
       >
-        <Fountain
-          props={{ scale: 0.001, position: [0.4, -1, -1] }}
+        <Phoenix
+          props={{ scale: 0.004, position: [0, -1, 0] }}
           isHovered={isHovered}
         />
       </SceneStage>
