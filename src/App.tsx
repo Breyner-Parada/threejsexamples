@@ -4,6 +4,7 @@ import { Navbar } from "./components/Navbar";
 import { WormHoleCanvas } from "./components/WormholeEffect";
 import { MainCanvas } from "./components/MainCanvas";
 import { PortalScene } from "./components/PortalScene";
+import { RaycasterExample } from "./components/Models/Raycaster";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           }
         />
         <Route path="/portals" element={<PortalScene />} />
+        <Route path="/raycaster" element={<RaycasterExample />} />
       </Routes>
     </HashRouter>
   );

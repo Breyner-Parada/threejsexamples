@@ -8,6 +8,7 @@ const navigation = [
   { name: "Curved", href: "/curvepath" },
   { name: "Tunnel", href: "/tunnel" },
   { name: "Portals", href: "/portals" },
+  { name: "Raycaster", href: "/raycaster" },
 ];
 
 export const Navbar = () => {
