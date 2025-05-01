@@ -1,10 +1,11 @@
-import { Routes, Route, HashRouter  } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 import { WormHoleCanvas } from "./components/WormholeEffect";
 import { MainCanvas } from "./components/MainCanvas";
 import { PortalScene } from "./components/PortalScene";
 import { RaycasterExample } from "./components/Models/Raycaster";
+import { DraggableObjects } from "./components/Models/DraggableObjects";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/portals" element={<PortalScene />} />
         <Route path="/raycaster" element={<RaycasterExample />} />
+        <Route path="/draggable" element={<DraggableObjects />} />
       </Routes>
     </HashRouter>
   );

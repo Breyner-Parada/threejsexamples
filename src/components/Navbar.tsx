@@ -9,6 +9,7 @@ const navigation = [
   { name: "Tunnel", href: "/tunnel" },
   { name: "Portals", href: "/portals" },
   { name: "Raycaster", href: "/raycaster" },
+  { name: "Draggable", href: "/draggable" },
 ];
 
 export const Navbar = () => {
