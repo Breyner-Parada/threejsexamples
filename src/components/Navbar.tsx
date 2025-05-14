@@ -10,6 +10,8 @@ const navigation = [
   { name: "Portals", href: "/portals" },
   { name: "Raycaster", href: "/raycaster" },
   { name: "Draggable", href: "/draggable" },
+  { name: "Particles", href: "/particles" },
+  { name: "Physics", href: "/physics" },
 ];
 
 export const Navbar = () => {

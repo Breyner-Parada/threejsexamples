@@ -4,7 +4,6 @@ import {
   Environment,
   MeshPortalMaterial,
   RoundedBox,
-  Text,
   useCursor,
   useTexture,
 } from "@react-three/drei";
@@ -108,7 +107,6 @@ const SceneStage = ({
   children,
   textureImg,
   name,
-  color,
   activeScene,
   setActiveScene,
   setIsHovered,
@@ -132,10 +130,6 @@ const SceneStage = ({
 
   return (
     <group {...props}>
-      <Text fontSize={0.4} position={[0, -1.3, 0.051]} anchorY={"bottom"}>
-        {name}
-        <meshBasicMaterial color={color} toneMapped={false} />
-      </Text>
       <RoundedBox
         args={[2, 3, 0.1]}
         onDoubleClick={() => setActiveScene(activeScene === name ? "" : name)}

@@ -6,6 +6,8 @@ import { MainCanvas } from "./components/MainCanvas";
 import { PortalScene } from "./components/PortalScene";
 import { RaycasterExample } from "./components/Models/Raycaster";
 import { DraggableObjects } from "./components/Models/DraggableObjects";
+import { ParticleCursor } from "./components/Models/Particles";
+import { PhysicsModel } from "./components/Models/Physics";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
         <Route path="/portals" element={<PortalScene />} />
         <Route path="/raycaster" element={<RaycasterExample />} />
         <Route path="/draggable" element={<DraggableObjects />} />
+        <Route path="/particles" element={<ParticleCursor />} />
+        <Route path="/physics" element={<PhysicsModel />} />
       </Routes>
     </HashRouter>
   );
